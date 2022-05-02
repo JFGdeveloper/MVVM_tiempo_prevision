@@ -1,4 +1,4 @@
-package com.javidev.eltiempo.ui.theme
+package com.javidev.eltiempo.presentation.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

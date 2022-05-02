@@ -1,4 +1,4 @@
-package com.javidev.eltiempo.ui.theme
+package com.javidev.eltiempo.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
