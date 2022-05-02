@@ -5,6 +5,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.javidev.eltiempo.presentation.screens.MainActivity
+import com.javidev.eltiempo.presentation.screens.MainScreen
 import com.javidev.eltiempo.presentation.screens.SplashScreen
 
 @Composable
@@ -18,7 +19,7 @@ fun Navigation() {
         }
 
         composable(DestinoScreen.MainScreen.name){
-
+            MainScreen()
         }
     }
 }
