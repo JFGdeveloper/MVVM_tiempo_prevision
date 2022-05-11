@@ -12,13 +12,16 @@ class WeatherRepository @Inject constructor(private val api: WeatherApi) {
     suspend fun getWeather(cityQuery: String, units: String)
             : DataOrException<Weather, Boolean, Exception> {
         val response = try {
+            Log.d("REPO", "dentro del TRY")
+
             api.getWeather(query = cityQuery, units = units)
 
         } catch (e: Exception) {
-            Log.d("REX", "getWeather: $e")
+            Log.d("REPO", "Excepction: $e")
             return DataOrException(e = e)
         }
-        Log.d("INSIDE", "getWeather: $response")
+
+        Log.d("REPO", "valor del response: $response")
         return DataOrException(data = response)
 
     }
